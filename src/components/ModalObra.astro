@@ -1,0 +1,147 @@
+---
+---
+<!-- Modal Backdrop -->
+<div
+  id="obra-modal"
+  class="fixed inset-0 z-50 hidden bg-stage-950/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="relative w-full max-w-3xl bg-stage-900 border border-stage-700 rounded-2xl shadow-2xl overflow-hidden my-8">
+    <!-- Close button -->
+    <button
+      type="button"
+      id="modal-close-btn"
+      class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-stage-950/80 hover:bg-stage-800 text-slate-300 hover:text-white flex items-center justify-center transition border border-stage-700"
+      aria-label="Cerrar modal"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- Modal Content (Injected by JS) -->
+    <div id="modal-body" class="max-h-[85vh] overflow-y-auto">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('obra-modal');
+  const modalBody = document.getElementById('modal-body');
+  const closeBtn = document.getElementById('modal-close-btn');
+  const openButtons = document.querySelectorAll('.open-modal-btn');
+
+  function openModal(obraData: any) {
+    if (!modal || !modalBody) return;
+
+    modalBody.innerHTML = `
+      <!-- Header Banner / Photos Carousel -->
+      <div class="relative h-72 sm:h-80 bg-stage-950">
+        <img src="${obraData.portada}" alt="${obraData.titulo}" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-stage-900 via-stage-900/40 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6">
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="px-2.5 py-1 rounded bg-theatre-gold text-stage-950 text-xs font-bold">
+              ${obraData.anio} • ${obraData.grado}
+            </span>
+            <span class="px-2.5 py-1 rounded bg-stage-950/80 text-slate-200 text-xs font-medium border border-stage-700">
+              ${obraData.genero}
+            </span>
+            <span class="px-2.5 py-1 rounded bg-stage-950/80 text-slate-300 text-xs font-medium border border-stage-700">
+              ⏱ ${obraData.duracion}
+            </span>
+          </div>
+          <h2 class="font-theatre text-2xl sm:text-3xl font-bold text-white">${obraData.titulo}</h2>
+          <p class="text-xs sm:text-sm text-theatre-gold font-medium mt-0.5">${obraData.autor}</p>
+        </div>
+      </div>
+
+      <!-- Main Body -->
+      <div class="p-6 sm:p-8 space-y-8 text-slate-300">
+        <!-- Sinopsis -->
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-theatre-gold font-bold mb-2">Sinopsis Argumental</h3>
+          <p class="text-sm leading-relaxed text-slate-200 bg-stage-850/60 p-4 rounded-xl border border-stage-700/50">
+            ${obraData.sinopsis}
+          </p>
+        </div>
+
+        <!-- Reparto de Personajes -->
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-theatre-gold font-bold mb-3">Reparto y Caracterización</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            ${obraData.reparto.map((r: any) => `
+              <div class="flex items-center justify-between p-3 rounded-xl bg-stage-850 border border-stage-700/50 text-xs">
+                <span class="font-semibold text-theatre-gold">${r.personaje}</span>
+                <span class="text-slate-300">${r.actor}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Galería de Escena -->
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-theatre-gold font-bold mb-3">Registro Fotográfico de la Puesta en Escena</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            ${obraData.fotos_escena.map((f: string, i: number) => `
+              <div class="h-28 rounded-xl overflow-hidden border border-stage-700/60 bg-stage-950">
+                <img src="${f}" alt="Foto escena ${i+1}" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Ficha Técnica y Libreto -->
+        <div class="pt-4 border-t border-stage-700/70 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-xs text-slate-400">
+            <div><strong class="text-slate-300">Dirección:</strong> ${obraData.ficha_tecnica.direccion}</div>
+            <div><strong class="text-slate-300">Archivo:</strong> Taller de Teatro COAR Amazonas</div>
+          </div>
+
+          <a
+            href="#libretos"
+            onclick="document.getElementById('obra-modal').classList.add('hidden')"
+            class="w-full sm:w-auto px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-theatre-gold to-yellow-600 text-stage-950 hover:brightness-110 shadow-lg shadow-theatre-gold/20 flex items-center justify-center gap-2 transition"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Ir al Libreto PDF (${obraData.pdf_tamano})
+          </a>
+        </div>
+      </div>
+    `;
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  openButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const dataStr = btn.getAttribute('data-obra');
+      if (dataStr) {
+        try {
+          const obra = JSON.parse(dataStr);
+          openModal(obra);
+        } catch (e) {
+          console.error('Error parsing obra data', e);
+        }
+      }
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  }
+</script>

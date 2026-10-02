@@ -1,0 +1,159 @@
+---
+import teatroData from '../data/obras.json';
+const { obras } = teatroData;
+---
+
+<section id="obras" class="py-16 bg-stage-900/60 border-t border-b border-stage-800/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Title -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-widest text-theatre-gold">Catálogo Histórico</span>
+        <h2 class="font-theatre text-2xl sm:text-4xl font-bold text-white mt-1">
+          Obras Representadas por el Elenco
+        </h2>
+        <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+          Fichas artísticas, galerías fotográficas de actuaciones y libretos organizados por grado y temporada.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="filter-container">
+        <button
+          type="button"
+          class="filter-btn active px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-theatre-gold text-stage-950 shadow"
+          data-filter="all"
+        >
+          Todas
+        </button>
+        <button
+          type="button"
+          class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
+          data-filter="4.° de Secundaria"
+        >
+          4.° Grado
+        </button>
+        <button
+          type="button"
+          class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
+          data-filter="5.° de Secundaria"
+        >
+          5.° Grado
+        </button>
+        <button
+          type="button"
+          class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
+          data-filter="3.° de Secundaria"
+        >
+          3.° Grado
+        </button>
+      </div>
+    </div>
+
+    <!-- Plays Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="plays-grid">
+      {obras.map((obra) => (
+        <article
+          class="play-card group bg-stage-850 rounded-2xl overflow-hidden border border-stage-700/60 hover:border-theatre-gold/40 transition-all duration-300 flex flex-col shadow-lg hover:shadow-theatre-gold/10"
+          data-grado={obra.grado}
+        >
+          <!-- Play Cover / Photo -->
+          <div class="relative h-60 overflow-hidden bg-stage-950">
+            <img
+              src={obra.portada}
+              alt={obra.titulo}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stage-850 via-stage-850/30 to-transparent"></div>
+            
+            <!-- Badges -->
+            <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-stage-950/80 backdrop-blur-md text-theatre-gold border border-theatre-gold/30">
+                {obra.anio} • {obra.grado}
+              </span>
+              <span class="px-2 py-1 rounded-md text-[11px] font-medium bg-stage-900/80 backdrop-blur-md text-slate-300">
+                {obra.genero}
+              </span>
+            </div>
+
+            <div class="absolute bottom-3 right-3 text-xs text-slate-300 font-medium bg-stage-950/70 px-2 py-1 rounded">
+              ⏱ {obra.duracion}
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="text-xs text-theatre-gold-light uppercase tracking-wider font-semibold">
+                {obra.autor}
+              </p>
+              <h3 class="font-theatre text-xl font-bold text-white mt-1 group-hover:text-theatre-gold transition-colors">
+                {obra.titulo}
+              </h3>
+              <p class="text-xs text-slate-300 mt-2.5 line-clamp-3 leading-relaxed">
+                {obra.sinopsis}
+              </p>
+
+              <!-- Cast Preview Pill -->
+              <div class="mt-4 pt-3 border-t border-stage-700/40 flex items-center justify-between text-xs text-slate-400">
+                <span>🎭 Reparto:</span>
+                <span class="font-medium text-slate-200">{obra.reparto.length} personajes</span>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-stage-700/60 flex items-center gap-3">
+              <button
+                type="button"
+                class="open-modal-btn flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold text-white bg-stage-800 hover:bg-stage-700 border border-stage-600/60 hover:border-theatre-gold/40 transition text-center"
+                data-obra={JSON.stringify(obra)}
+              >
+                Ficha y Fotos
+              </button>
+              <a
+                href="#libretos"
+                class="py-2.5 px-3 rounded-lg text-xs font-semibold text-theatre-gold hover:text-white bg-theatre-gold/10 hover:bg-theatre-gold/20 border border-theatre-gold/30 transition text-center flex items-center gap-1.5"
+                title={`Descargar libreto de ${obra.titulo}`}
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                PDF
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Filter Logic -->
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.play-card');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      // Toggle button styles
+      buttons.forEach((b) => {
+        b.classList.remove('bg-theatre-gold', 'text-stage-950', 'active', 'shadow');
+        b.classList.add('bg-stage-850', 'text-slate-300', 'border', 'border-stage-700');
+      });
+      btn.classList.add('bg-theatre-gold', 'text-stage-950', 'active', 'shadow');
+      btn.classList.remove('bg-stage-850', 'text-slate-300', 'border-stage-700');
+
+      const filter = btn.getAttribute('data-filter');
+
+      cards.forEach((card) => {
+        const grado = card.getAttribute('data-grado');
+        if (filter === 'all' || grado === filter) {
+          (card as HTMLElement).style.display = 'flex';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

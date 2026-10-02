@@ -1,0 +1,84 @@
+---
+---
+<header class="sticky top-0 z-40 backdrop-blur-md bg-stage-950/85 border-b border-stage-700/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo + School Title -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative w-12 h-12 flex-shrink-0 rounded-full p-0.5 bg-gradient-to-br from-theatre-gold to-yellow-600 shadow-lg shadow-theatre-gold/20 group-hover:scale-105 transition-transform duration-300">
+          <img
+            src="/coar-logo.png"
+            alt="Escudo COAR"
+            class="w-full h-full object-contain rounded-full bg-stage-900"
+          />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-theatre text-base sm:text-lg font-bold tracking-wider text-slate-100 group-hover:text-theatre-gold transition-colors">
+            TEATRO COAR
+          </span>
+          <span class="text-xs font-medium tracking-widest text-theatre-gold uppercase">
+            Amazonas
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#inicio" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
+          Inicio
+        </a>
+        <a href="#obras" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
+          Cartelera de Obras
+        </a>
+        <a href="#libretos" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
+          Libretos en PDF
+        </a>
+        <a href="#elenco" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
+          Elenco e Integrantes
+        </a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a
+          href="#libretos"
+          class="px-4 py-2 rounded-lg text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-theatre-gold to-yellow-600 text-stage-950 hover:brightness-110 shadow-md shadow-theatre-gold/20 transition-all"
+        >
+          Descargar Libretos
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex md:hidden">
+        <button
+          type="button"
+          id="mobile-menu-btn"
+          class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-stage-800 transition"
+          aria-label="Abrir menú"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-stage-850 bg-stage-950/95 px-4 pt-3 pb-5 space-y-3">
+    <a href="#inicio" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Inicio</a>
+    <a href="#obras" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Cartelera de Obras</a>
+    <a href="#libretos" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Libretos en PDF</a>
+    <a href="#elenco" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Elenco e Integrantes</a>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>

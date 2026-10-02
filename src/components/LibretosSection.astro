@@ -1,0 +1,92 @@
+---
+import teatroData from '../data/obras.json';
+const { obras } = teatroData;
+---
+
+<section id="libretos" class="py-16 bg-stage-950 border-b border-stage-800/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-semibold uppercase tracking-widest text-theatre-gold">Biblioteca Pedagógica</span>
+      <h2 class="font-theatre text-2xl sm:text-4xl font-bold text-white mt-1">
+        Banco de Libretos y Guiones en PDF
+      </h2>
+      <p class="text-sm text-slate-400 mt-2">
+        Textos teatrales, adaptaciones y manuales de puesta en escena disponibles para descarga inmediata por los estudiantes de los siguientes grados.
+      </p>
+    </div>
+
+    <!-- Search / Info Notice -->
+    <div class="bg-stage-900/90 border border-theatre-gold/30 rounded-2xl p-5 sm:p-6 mb-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-xl bg-theatre-gold/15 text-theatre-gold flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white">Espacio de Almacenamiento Oficial</h4>
+          <p class="text-xs text-slate-300">
+            Los documentos se cargan en formato PDF para lectura e impresión en ensayos. El asesor actualiza este banco periódicamente.
+          </p>
+        </div>
+      </div>
+      <div class="w-full md:w-auto">
+        <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-stage-850 text-theatre-gold border border-stage-700 block text-center">
+          Acceso Libre para la Comunidad COAR
+        </span>
+      </div>
+    </div>
+
+    <!-- Script Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {obras.map((obra) => (
+        <div class="bg-stage-900 rounded-2xl p-6 border border-stage-700/60 hover:border-theatre-gold/40 transition-all flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-bold text-theatre-gold uppercase tracking-wider">
+                PDF • {obra.pdf_tamano}
+              </span>
+              <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-stage-800 text-slate-300">
+                {obra.grado}
+              </span>
+            </div>
+
+            <h3 class="font-theatre text-lg font-bold text-white">
+              {obra.titulo}
+            </h3>
+            <p class="text-xs text-slate-400 font-medium mt-0.5 mb-3">
+              {obra.autor}
+            </p>
+
+            <p class="text-xs text-slate-300 line-clamp-3 leading-relaxed mb-4">
+              {obra.sinopsis}
+            </p>
+
+            <div class="p-3 rounded-xl bg-stage-850 border border-stage-700/40 text-[11px] text-slate-400 space-y-1 mb-4">
+              <div class="flex justify-between">
+                <span>Personajes:</span>
+                <span class="font-medium text-slate-200">{obra.reparto.length} roles</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Temporada:</span>
+                <span class="font-medium text-slate-200">{obra.anio}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Action -->
+          <a
+            href={`/libretos/${obra.id}.pdf`}
+            download={`${obra.titulo.replace(/[^a-zA-Z0-9]/g, '_')}_Libreto_COAR.pdf`}
+            class="w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-stage-800 hover:bg-theatre-gold hover:text-stage-950 text-slate-200 border border-stage-700 hover:border-theatre-gold transition-all duration-200 flex items-center justify-center gap-2 group shadow"
+          >
+            <svg class="w-4 h-4 text-theatre-gold group-hover:text-stage-950 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Descargar Libreto
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

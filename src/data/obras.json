@@ -1,0 +1,122 @@
+{
+  "institucion": {
+    "nombre": "Colegio de Alto Rendimiento Amazonas",
+    "siglas": "COAR Amazonas",
+    "taller": "Elenco de Teatro & Creación Escénica",
+    "lema": "Expresión, identidad y rigor escénico",
+    "ubicacion": "Amazonas, Perú",
+    "redes": {
+      "facebook": "https://www.facebook.com/COARfamilia",
+      "minedu": "https://admisioncoar.minedu.gob.pe/"
+    }
+  },
+  "obras": [
+    {
+      "id": "obra-01",
+      "titulo": "Ollantay (Adaptación Escénica)",
+      "autor": "Dramaturgia Andina Clásica / Versión COAR",
+      "anio": "2026",
+      "grado": "4.° de Secundaria",
+      "genero": "Drama Histórico",
+      "duracion": "45 min",
+      "sinopsis": "Adaptación dramática del clásico quechua enfocada en el honor, la lealtad y el conflicto entre el poder y el amor rebelde. Los estudiantes exploraron dicción ceremonial y presencia corporal solemne.",
+      "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "#",
+      "pdf_tamano": "1.8 MB",
+      "reparto": [
+        { "personaje": "Ollantay", "actor": "Estudiante 4° A" },
+        { "personaje": "Cusi Coyllur", "actor": "Estudiante 4° B" },
+        { "personaje": "Pachacútec", "actor": "Estudiante 4° A" },
+        { "personaje": "Rumiñahui", "actor": "Estudiante 4° C" },
+        { "personaje": "Piqui Chaqui", "actor": "Estudiante 4° B" }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Profesor Asesor de Arte y Cultura",
+        "escenografia": "Taller de Artes Visuales COAR",
+        "sonido": "Ensamble Musical Escolar"
+      }
+    },
+    {
+      "id": "obra-02",
+      "titulo": "Bodas de Sangre",
+      "autor": "Federico García Lorca",
+      "anio": "2025",
+      "grado": "5.° de Secundaria",
+      "genero": "Tragedia Lírica",
+      "duracion": "55 min",
+      "sinopsis": "Tragedia en verso y prosa sobre el destino inexorable, los amores prohibidos y la tierra. La puesta en escena combinó guitarra acústica en vivo y un riguroso trabajo de modulación vocal.",
+      "portada": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "#",
+      "pdf_tamano": "2.4 MB",
+      "reparto": [
+        { "personaje": "La Madre", "actor": "Estudiante Promoción 2025" },
+        { "personaje": "El Novio", "actor": "Estudiante Promoción 2025" },
+        { "personaje": "La Novia", "actor": "Estudiante Promoción 2025" },
+        { "personaje": "Leonardo", "actor": "Estudiante Promoción 2025" },
+        { "personaje": "La Luna / La Muerte", "actor": "Estudiante Promoción 2025" }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Dirección Artística COAR",
+        "vestuario": "Elenco y Familias COAR Amazonas",
+        "iluminacion": "Equipo Técnico Escolar"
+      }
+    },
+    {
+      "id": "obra-03",
+      "titulo": "El Sargento Canuto",
+      "autor": "Manuel Ascencio Segura",
+      "anio": "2024",
+      "grado": "3.° de Secundaria",
+      "genero": "Comedia Costumbrista",
+      "duracion": "35 min",
+      "sinopsis": "Sátira costumbrista de las pretensiones militares y los enredos amorosos del siglo XIX peruano. Ejercicio de iniciación teatral centrado en la proyección corporal, el ritmo cómico y el gag escénico.",
+      "portada": "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "#",
+      "pdf_tamano": "1.2 MB",
+      "reparto": [
+        { "personaje": "Sargento Canuto", "actor": "Estudiante 3° B" },
+        { "personaje": "Don Sempronio", "actor": "Estudiante 3° A" },
+        { "personaje": "Jacoba", "actor": "Estudiante 3° C" },
+        { "personaje": "Pulqueria", "actor": "Estudiante 3° B" }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Profesor Asesor",
+        "utileria": "Estudiantes de 3.° Grado",
+        "registro": "Archivo Fotográfico COAR"
+      }
+    }
+  ],
+  "integrantes_historicos": [
+    {
+      "nombre": "Elenco Promoción 2026 (4.° Grado)",
+      "periodo": "2025 - Presente",
+      "descripcion": "Especialización en drama clásico y técnicas de modulación vocal.",
+      "foto": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "nombre": "Elenco Promoción 2025 (5.° Grado)",
+      "periodo": "2024 - 2025",
+      "descripcion": "Montajes de tragedia lírica, creación colectiva y poesía dramatizada.",
+      "foto": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "nombre": "Semillero Teatral 2024 (3.° Grado)",
+      "periodo": "2024",
+      "descripcion": "Iniciación al juego dramático, improvisación y sainete costumbrista.",
+      "foto": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

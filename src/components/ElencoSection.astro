@@ -1,0 +1,56 @@
+---
+import teatroData from '../data/obras.json';
+const { integrantes_historicos } = teatroData;
+---
+
+<section id="elenco" class="py-16 bg-stage-900/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-semibold uppercase tracking-widest text-theatre-gold">Memoria y Legado</span>
+      <h2 class="font-theatre text-2xl sm:text-4xl font-bold text-white mt-1">
+        Elenco e Integrantes por Promoción
+      </h2>
+      <p class="text-sm text-slate-400 mt-2">
+        Reconocimiento a los estudiantes del COAR Amazonas que dieron vida a los personajes y consolidaron el taller de artes escénicas.
+      </p>
+    </div>
+
+    <!-- Cast Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {integrantes_historicos.map((item) => (
+        <div class="bg-stage-850 rounded-2xl overflow-hidden border border-stage-700/60 hover:border-theatre-gold/40 transition-all flex flex-col group shadow-lg">
+          <div class="relative h-56 overflow-hidden bg-stage-950">
+            <img
+              src={item.foto}
+              alt={item.nombre}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85 group-hover:opacity-100"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stage-850 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4">
+              <span class="px-2.5 py-1 rounded bg-stage-950/80 backdrop-blur-md text-theatre-gold text-xs font-bold border border-theatre-gold/30">
+                {item.periodo}
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-theatre text-lg font-bold text-white group-hover:text-theatre-gold transition-colors">
+                {item.nombre}
+              </h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                {item.descripcion}
+              </p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-stage-700/40 text-[11px] text-slate-400 flex items-center justify-between">
+              <span>Taller de Teatro</span>
+              <span class="text-theatre-gold font-semibold">COAR Amazonas</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
