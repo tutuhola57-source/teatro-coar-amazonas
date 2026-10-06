@@ -1,11 +1,11 @@
 ---
 ---
-<header class="sticky top-0 z-40 backdrop-blur-md bg-stage-950/85 border-b border-stage-700/40">
+<header class="sticky top-0 z-40 backdrop-blur-md bg-stage-950/95 border-b border-stage-700/50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
       <!-- Logo + School Title -->
       <a href="#" class="flex items-center gap-3.5 group">
-        <div class="relative w-12 h-12 flex-shrink-0 rounded-full p-0.5 bg-gradient-to-br from-theatre-gold to-yellow-600 shadow-lg shadow-theatre-gold/20 group-hover:scale-105 transition-transform duration-300">
+        <div class="relative w-12 h-12 flex-shrink-0 rounded-full p-0.5 bg-gradient-to-br from-theatre-gold to-yellow-600 shadow-md shadow-theatre-gold/20 group-hover:scale-105 transition-transform duration-300">
           <img
             src={`${import.meta.env.BASE_URL}coar-logo.png`}
             alt="Escudo COAR"
@@ -16,25 +16,31 @@
           <span class="font-theatre text-base sm:text-lg font-bold tracking-wider text-slate-100 group-hover:text-theatre-gold transition-colors">
             TEATRO COAR
           </span>
-          <span class="text-xs font-medium tracking-widest text-theatre-gold uppercase">
+          <span class="text-[11px] font-semibold tracking-widest text-theatre-gold uppercase">
             Amazonas
           </span>
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="#inicio" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
+      <!-- Desktop Navigation (Maritza Valle Style: clean horizontal list with golden active accents) -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase">
+        <a href="#inicio" class="text-theatre-gold border-b-2 border-theatre-gold pb-1 transition-colors">
           Inicio
         </a>
-        <a href="#obras" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
-          Cartelera de Obras
+        <a href="#direccion" class="text-slate-300 hover:text-theatre-gold hover:border-b-2 hover:border-theatre-gold/60 pb-1 transition-all">
+          Dirección
         </a>
-        <a href="#libretos" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
-          Libretos en PDF
+        <a href="#obras" class="text-slate-300 hover:text-theatre-gold hover:border-b-2 hover:border-theatre-gold/60 pb-1 transition-all">
+          Obras
         </a>
-        <a href="#elenco" class="text-sm font-medium text-slate-300 hover:text-theatre-gold transition-colors">
-          Elenco e Integrantes
+        <a href="#libretos" class="text-slate-300 hover:text-theatre-gold hover:border-b-2 hover:border-theatre-gold/60 pb-1 transition-all">
+          Libretos PDF
+        </a>
+        <a href="#elenco" class="text-slate-300 hover:text-theatre-gold hover:border-b-2 hover:border-theatre-gold/60 pb-1 transition-all">
+          Elenco
+        </a>
+        <a href="#contacto" class="text-slate-300 hover:text-theatre-gold hover:border-b-2 hover:border-theatre-gold/60 pb-1 transition-all">
+          Contacto
         </a>
       </nav>
 
@@ -49,7 +55,7 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <div class="flex md:hidden">
+      <div class="flex lg:hidden">
         <button
           type="button"
           id="mobile-menu-btn"
@@ -65,11 +71,13 @@
   </div>
 
   <!-- Mobile Dropdown -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-stage-850 bg-stage-950/95 px-4 pt-3 pb-5 space-y-3">
-    <a href="#inicio" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Inicio</a>
-    <a href="#obras" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Cartelera de Obras</a>
-    <a href="#libretos" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Libretos en PDF</a>
-    <a href="#elenco" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Elenco e Integrantes</a>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-stage-850 bg-stage-950/95 px-4 pt-3 pb-5 space-y-3">
+    <a href="#inicio" class="block text-sm font-medium text-theatre-gold py-1">Inicio</a>
+    <a href="#direccion" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Dirección</a>
+    <a href="#obras" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Obras</a>
+    <a href="#libretos" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Libretos PDF</a>
+    <a href="#elenco" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Elenco</a>
+    <a href="#contacto" class="block text-sm font-medium text-slate-300 hover:text-theatre-gold py-1">Contacto</a>
   </div>
 </header>
 

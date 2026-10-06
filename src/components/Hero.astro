@@ -1,59 +1,59 @@
 ---
 ---
-<section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="text-center max-w-3xl mx-auto">
-      <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stage-850/80 border border-theatre-gold/30 text-theatre-gold text-xs font-semibold tracking-wider uppercase mb-6 shadow-inner">
-        <span class="w-2 h-2 rounded-full bg-theatre-gold animate-pulse"></span>
-        Colegio de Alto Rendimiento Amazonas • Taller de Arte y Escena
-      </div>
+<section id="inicio" class="relative bg-stage-950 overflow-hidden border-b border-stage-800">
+  <!-- Theatrical Stage Photo Banner (Maritza Valle Style) -->
+  <div class="relative w-full h-[480px] sm:h-[560px] md:h-[620px] lg:h-[680px] bg-black">
+    <!-- Authentic Cast Photo -->
+    <img
+      src={`${import.meta.env.BASE_URL}elenco-principal.png`}
+      alt="Elenco de Teatro COAR Amazonas en escena con su Asesor"
+      class="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.05]"
+    />
 
-      <!-- Main Headline -->
-      <h1 class="font-theatre text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight sm:leading-tight">
-        Archivo y Memoria Escénica del <span class="text-theatre-gold font-extrabold drop-shadow-[0_0_25px_rgba(245,158,11,0.45)]">Teatro COAR</span>
+    <!-- Subtle Theatrical Stage Vignette (Red velvet & dark shadow gradients) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-stage-950 via-stage-950/40 to-black/50 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-stage-950/80 via-transparent to-stage-950/80 pointer-events-none"></div>
+
+    <!-- Official Troupe Commemorative Badge (Top Left / Right) -->
+    <div class="absolute top-6 left-6 sm:top-8 sm:left-8 z-20">
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-stage-950/85 backdrop-blur-md border border-theatre-gold/40 text-theatre-gold text-xs font-semibold uppercase tracking-wider shadow-xl">
+        <span class="w-2 h-2 rounded-full bg-theatre-gold animate-pulse"></span>
+        Elenco Oficial • COAR Amazonas
+      </div>
+    </div>
+
+    <!-- Central Overlay Content & Inspirational Quote (Maritza Valle Style) -->
+    <div class="absolute inset-x-0 bottom-16 sm:bottom-20 z-20 px-4 sm:px-8 text-center max-w-4xl mx-auto">
+      <h1 class="font-theatre text-2xl sm:text-4xl md:text-5xl font-bold text-white tracking-wide leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
+        Archivo y Memoria Escénica del <span class="text-theatre-gold font-extrabold drop-shadow-[0_0_25px_rgba(245,158,11,0.5)]">Teatro COAR</span>
       </h1>
 
-      <!-- Description (Strictly grounded, no AI cliches) -->
-      <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-        Repositorio oficial de montajes teatrales, registro fotográfico de caracterización y banco de libretos en PDF. Un espacio creado para que cada nueva promoción consulte obras previas, estudie adaptaciones dramáticas y continúe la tradición artística de nuestra institución.
+      <p class="font-theatre italic text-base sm:text-xl text-yellow-100/95 font-medium mt-3 sm:mt-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] max-w-2xl mx-auto">
+        “El arte escénico como reflejo de nuestra identidad, voz y memoria”
       </p>
 
       <!-- Action Buttons -->
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
         <a
           href="#obras"
-          class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide bg-gradient-to-r from-theatre-gold via-yellow-500 to-theatre-gold-dark text-stage-950 hover:brightness-110 shadow-lg shadow-theatre-gold/25 transition-all text-center"
+          class="px-6 py-2.5 sm:px-8 sm:py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-theatre-gold to-yellow-600 text-stage-950 hover:brightness-110 shadow-xl shadow-theatre-gold/20 transition-all"
         >
-          🎭 Explorar Obras y Montajes
+          🎭 Ver Obras del Elenco
         </a>
         <a
           href="#libretos"
-          class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide bg-stage-850 hover:bg-stage-800 text-slate-200 border border-stage-700 hover:border-theatre-gold/50 transition-all text-center"
+          class="px-6 py-2.5 sm:px-8 sm:py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-stage-900/90 hover:bg-stage-850 text-slate-200 border border-theatre-gold/40 hover:border-theatre-gold transition-all"
         >
-          📥 Banco de Libretos en PDF
+          📥 Descargar Libretos PDF
         </a>
       </div>
+    </div>
 
-      <!-- Quick Metrics Strip -->
-      <div class="mt-14 pt-8 border-t border-stage-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div>
-          <div class="font-theatre text-2xl sm:text-3xl font-bold text-theatre-gold">3.°, 4.° y 5.°</div>
-          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Grados Académicos</div>
-        </div>
-        <div>
-          <div class="font-theatre text-2xl sm:text-3xl font-bold text-white">Clásicos & Contemporáneos</div>
-          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Géneros Representados</div>
-        </div>
-        <div>
-          <div class="font-theatre text-2xl sm:text-3xl font-bold text-theatre-gold">100% Libre</div>
-          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Descarga de Libretos</div>
-        </div>
-        <div>
-          <div class="font-theatre text-2xl sm:text-3xl font-bold text-white">Región Amazonas</div>
-          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Identidad Cultural</div>
-        </div>
-      </div>
+    <!-- Carousel Dots Navigation Indicator (Maritza Valle Style) -->
+    <div class="absolute bottom-5 inset-x-0 z-20 flex items-center justify-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-theatre-gold shadow-md"></span>
+      <span class="w-2 h-2 rounded-full bg-white/40"></span>
+      <span class="w-2 h-2 rounded-full bg-white/40"></span>
     </div>
   </div>
 </section>
