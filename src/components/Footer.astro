@@ -9,7 +9,7 @@ const { institucion } = teatroData;
       <!-- Col 1: Identity -->
       <div class="md:col-span-2 space-y-3">
         <div class="flex items-center gap-3">
-          <img src="/coar-logo.png" alt="Escudo COAR" class="w-10 h-10 object-contain rounded-full bg-stage-900 border border-theatre-gold/40 p-0.5" />
+          <img src={`${import.meta.env.BASE_URL}coar-logo.png`} alt="Escudo COAR" class="w-10 h-10 object-contain rounded-full bg-stage-900 border border-theatre-gold/40 p-0.5" />
           <div>
             <h3 class="font-theatre text-base font-bold text-white tracking-wide">{institucion.nombre}</h3>
             <p class="text-xs text-theatre-gold font-semibold">{institucion.taller}</p>

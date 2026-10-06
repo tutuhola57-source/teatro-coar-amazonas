@@ -76,7 +76,7 @@ const { obras } = teatroData;
 
           <!-- Download Action -->
           <a
-            href={`/libretos/${obra.id}.pdf`}
+            href={`${import.meta.env.BASE_URL}libretos/${obra.id}.pdf`}
             download={`${obra.titulo.replace(/[^a-zA-Z0-9]/g, '_')}_Libreto_COAR.pdf`}
             class="w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-stage-800 hover:bg-theatre-gold hover:text-stage-950 text-slate-200 border border-stage-700 hover:border-theatre-gold transition-all duration-200 flex items-center justify-center gap-2 group shadow"
           >
