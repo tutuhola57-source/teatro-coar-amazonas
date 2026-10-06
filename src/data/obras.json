@@ -12,31 +12,27 @@
   },
   "obras": [
     {
-      "id": "fuenteovejuna-adaptacion-coar",
-      "titulo": "Fuenteovejuna: La Voz de un Pueblo",
-      "autor": "Félix Lope de Vega / Adaptación COAR Amazonas",
+      "id": "obra-estreno-2026",
+      "titulo": "Nueva Obra Original (En Creación 2026)",
+      "autor": "Dramaturgia Colectiva • Elenco COAR Amazonas",
       "anio": "2026",
       "grado": "4.° de Secundaria",
-      "genero": "Drama Clásico / Rebelión Colectiva",
+      "genero": "Drama Contemporáneo / Creación Colectiva",
       "duracion": "45 min",
-      "sinopsis": "Adaptación en tres actos sobre la dignidad humana, la resistencia campesina y la solidaridad comunal frente al abuso de poder. El elenco encarna el levantamiento de todo un pueblo bajo una sola voz unísona.",
+      "sinopsis": "Nueva producción dramática original en tres actos creada por el elenco del COAR Amazonas. Trama inédita que fusiona la esencia de los clásicos universales con la identidad y vivencias de nuestra región.",
       "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
       "fotos_escena": [
         "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
       ],
-      "pdf_libreto": "fuenteovejuna-adaptacion-coar.pdf",
-      "pdf_tamano": "2.1 MB",
+      "pdf_libreto": "#",
+      "pdf_tamano": "En redacción",
       "reparto": [
-        { "personaje": "Laurencia", "actor": "Actriz Principal" },
-        { "personaje": "Frondoso", "actor": "Actor Principal" },
-        { "personaje": "El Comendador", "actor": "Antagonista" },
-        { "personaje": "Pascuala", "actor": "Comunera" },
-        { "personaje": "Esteban (Alcalde)", "actor": "Autoridad Comunal" },
-        { "personaje": "Flores / El Juez", "actor": "Doble Papel" },
-        { "personaje": "Jacinta", "actor": "Comunera" },
-        { "personaje": "Mengo", "actor": "Comunero" }
+        { "personaje": "Rol Principal 1", "actor": "Elenco 2026" },
+        { "personaje": "Rol Principal 2", "actor": "Elenco 2026" },
+        { "personaje": "Antagonista", "actor": "Elenco 2026" },
+        { "personaje": "Voz de la Comunidad", "actor": "Elenco 2026" }
       ],
       "ficha_tecnica": {
         "direccion": "Dirección Artística COAR Amazonas",
