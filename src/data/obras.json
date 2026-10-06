@@ -12,32 +12,36 @@
   },
   "obras": [
     {
-      "id": "obra-estreno-2026",
-      "titulo": "Nueva Obra Original (En Creación 2026)",
+      "id": "noche-de-apagon-acto-1",
+      "titulo": "Noche de Apagón (Acto 1)",
       "autor": "Dramaturgia Colectiva • Elenco COAR Amazonas",
       "anio": "2026",
-      "grado": "4.° de Secundaria",
-      "genero": "Drama Contemporáneo / Creación Colectiva",
-      "duracion": "45 min",
-      "sinopsis": "Nueva producción dramática original en tres actos creada por el elenco del COAR Amazonas. Trama inédita que fusiona la esencia de los clásicos universales con la identidad y vivencias de nuestra región.",
+      "grado": "4.° y 5.° de Secundaria",
+      "genero": "Drama Psicológico / Thriller Intimista",
+      "duracion": "18 min (Acto 1)",
+      "sinopsis": "Durante una tormenta torrencial en la ceja de selva amazónica, un corte intempestivo de energía atrapa a ocho estudiantes en la sala de estudio. A la luz de tres velas temblorosas, la disciplina académica se resquebraja hasta que la caída accidental de un expediente confidencial desata el pánico: dos de ellos serán expulsados el lunes por colapso psicológico.",
       "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
       "fotos_escena": [
         "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
       ],
-      "pdf_libreto": "#",
-      "pdf_tamano": "En redacción",
+      "pdf_libreto": "libretos/noche-de-apagon-acto-1.pdf",
+      "pdf_tamano": "Libreto PDF (18 min)",
       "reparto": [
-        { "personaje": "Rol Principal 1", "actor": "Elenco 2026" },
-        { "personaje": "Rol Principal 2", "actor": "Elenco 2026" },
-        { "personaje": "Antagonista", "actor": "Elenco 2026" },
-        { "personaje": "Voz de la Comunidad", "actor": "Elenco 2026" }
+        { "personaje": "Mateo", "actor": "El Brigadier — Rigidez militar y temor a perder el control" },
+        { "personaje": "Sofía", "actor": "La Excelencia — Hiperventilación y pánico al error milimétrico" },
+        { "personaje": "Lucas", "actor": "El Sarcasmo — Cinismo protector y humor negro" },
+        { "personaje": "Valeria", "actor": "La Fricción — Desafío frontal contra la autoridad escolar" },
+        { "personaje": "Dante", "actor": "El Fantasma — Murmullos, culpa y custodio del expediente" },
+        { "personaje": "Isabel", "actor": "La Raíz — Templanza pausada y lectura de la realidad" },
+        { "personaje": "Joaquín", "actor": "El Cálculo — Ametralladora matemática y frialdad defensiva" },
+        { "personaje": "Camila", "actor": "El Pegamento — Mediación angustiada por la armonía del grupo" }
       ],
       "ficha_tecnica": {
         "direccion": "Dirección Artística COAR Amazonas",
-        "luces": "Ámbar cálido, azul frío y rojo cenital",
-        "sonido": "Efectos sonoros y percusión en vivo"
+        "luces": "Fluorescente clínico, corte a oscuras, anillo de 3 velas de sebo (ámbar tenue) y relámpago azul",
+        "sonido": "Lluvia torrencial amazónica continua, trueno sísmico y corte repentino"
       }
     },
     {
