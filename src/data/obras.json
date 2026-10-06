@@ -12,33 +12,36 @@
   },
   "obras": [
     {
-      "id": "obra-01",
-      "titulo": "Ollantay (Adaptación Escénica)",
-      "autor": "Dramaturgia Andina Clásica / Versión COAR",
+      "id": "fuenteovejuna-adaptacion-coar",
+      "titulo": "Fuenteovejuna: La Voz de un Pueblo",
+      "autor": "Félix Lope de Vega / Adaptación COAR Amazonas",
       "anio": "2026",
       "grado": "4.° de Secundaria",
-      "genero": "Drama Histórico",
+      "genero": "Drama Clásico / Rebelión Colectiva",
       "duracion": "45 min",
-      "sinopsis": "Adaptación dramática del clásico quechua enfocada en el honor, la lealtad y el conflicto entre el poder y el amor rebelde. Los estudiantes exploraron dicción ceremonial y presencia corporal solemne.",
+      "sinopsis": "Adaptación en tres actos sobre la dignidad humana, la resistencia campesina y la solidaridad comunal frente al abuso de poder. El elenco encarna el levantamiento de todo un pueblo bajo una sola voz unísona.",
       "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
       "fotos_escena": [
         "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
       ],
-      "pdf_libreto": "#",
-      "pdf_tamano": "1.8 MB",
+      "pdf_libreto": "fuenteovejuna-adaptacion-coar.pdf",
+      "pdf_tamano": "2.1 MB",
       "reparto": [
-        { "personaje": "Ollantay", "actor": "Estudiante 4° A" },
-        { "personaje": "Cusi Coyllur", "actor": "Estudiante 4° B" },
-        { "personaje": "Pachacútec", "actor": "Estudiante 4° A" },
-        { "personaje": "Rumiñahui", "actor": "Estudiante 4° C" },
-        { "personaje": "Piqui Chaqui", "actor": "Estudiante 4° B" }
+        { "personaje": "Laurencia", "actor": "Actriz Principal" },
+        { "personaje": "Frondoso", "actor": "Actor Principal" },
+        { "personaje": "El Comendador", "actor": "Antagonista" },
+        { "personaje": "Pascuala", "actor": "Comunera" },
+        { "personaje": "Esteban (Alcalde)", "actor": "Autoridad Comunal" },
+        { "personaje": "Flores / El Juez", "actor": "Doble Papel" },
+        { "personaje": "Jacinta", "actor": "Comunera" },
+        { "personaje": "Mengo", "actor": "Comunero" }
       ],
       "ficha_tecnica": {
-        "direccion": "Profesor Asesor de Arte y Cultura",
-        "escenografia": "Taller de Artes Visuales COAR",
-        "sonido": "Ensamble Musical Escolar"
+        "direccion": "Dirección Artística COAR Amazonas",
+        "luces": "Ámbar cálido, azul frío y rojo cenital",
+        "sonido": "Efectos sonoros y percusión en vivo"
       }
     },
     {
