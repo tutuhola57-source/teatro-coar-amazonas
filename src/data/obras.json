@@ -52,25 +52,25 @@
       "grado": "5.° de Secundaria",
       "genero": "Tragedia Lírica",
       "duracion": "55 min",
-      "sinopsis": "Tragedia en verso y prosa sobre el destino inexorable, los amores prohibidos y la tierra. La puesta en escena combinó guitarra acústica en vivo y un riguroso trabajo de modulación vocal.",
+      "sinopsis": "Adaptación escolar de la tragedia lorquiana realizada en el auditorio del COAR Amazonas. Los estudiantes trabajaron el verso, la sobriedad castellana y el acompañamiento musical con guitarra acústica en vivo, explorando el peso del honor familiar y el conflicto moral campesino.",
       "portada": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1000&q=80",
       "fotos_escena": [
         "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80"
       ],
       "pdf_libreto": "#",
-      "pdf_tamano": "2.4 MB",
+      "pdf_tamano": "2.4 MB (Archivo)",
       "reparto": [
-        { "personaje": "La Madre", "actor": "Estudiante Promoción 2025" },
-        { "personaje": "El Novio", "actor": "Estudiante Promoción 2025" },
-        { "personaje": "La Novia", "actor": "Estudiante Promoción 2025" },
-        { "personaje": "Leonardo", "actor": "Estudiante Promoción 2025" },
-        { "personaje": "La Luna / La Muerte", "actor": "Estudiante Promoción 2025" }
+        { "personaje": "La Madre", "actor": "Promoción 2025 (Chachapoyas)" },
+        { "personaje": "El Novio", "actor": "Promoción 2025 (Luya)" },
+        { "personaje": "La Novia", "actor": "Promoción 2025 (Bagua)" },
+        { "personaje": "Leonardo", "actor": "Promoción 2025 (Utcubamba)" },
+        { "personaje": "La Luna / La Muerte", "actor": "Promoción 2025 (Bongará)" }
       ],
       "ficha_tecnica": {
-        "direccion": "Dirección Artística COAR",
-        "vestuario": "Elenco y Familias COAR Amazonas",
-        "iluminacion": "Equipo Técnico Escolar"
+        "direccion": "Profesor Asesor • Taller de Teatro COAR Amazonas",
+        "vestuario": "Confección y utilería con apoyo de comités de aula",
+        "iluminacion": "Reflectores LED cenitales y contraluces cálidos"
       }
     },
     {
@@ -81,24 +81,24 @@
       "grado": "3.° de Secundaria",
       "genero": "Comedia Costumbrista",
       "duracion": "35 min",
-      "sinopsis": "Sátira costumbrista de las pretensiones militares y los enredos amorosos del siglo XIX peruano. Ejercicio de iniciación teatral centrado en la proyección corporal, el ritmo cómico y el gag escénico.",
+      "sinopsis": "Sátira costumbrista de Manuel Ascencio Segura montada por el semillero teatral de 3.° grado. Ejercicio práctico de proyección escénica, ritmo cómico y dicción rápida, abordando los enredos del sargento fanfarrón en la Lima decimonónica.",
       "portada": "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1000&q=80",
       "fotos_escena": [
         "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1000&q=80",
         "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80"
       ],
       "pdf_libreto": "#",
-      "pdf_tamano": "1.2 MB",
+      "pdf_tamano": "1.2 MB (Archivo)",
       "reparto": [
-        { "personaje": "Sargento Canuto", "actor": "Estudiante 3° B" },
-        { "personaje": "Don Sempronio", "actor": "Estudiante 3° A" },
-        { "personaje": "Jacoba", "actor": "Estudiante 3° C" },
-        { "personaje": "Pulqueria", "actor": "Estudiante 3° B" }
+        { "personaje": "Sargento Canuto", "actor": "Semillero 2024 (Sección A)" },
+        { "personaje": "Don Sempronio", "actor": "Semillero 2024 (Sección B)" },
+        { "personaje": "Jacoba", "actor": "Semillero 2024 (Sección C)" },
+        { "personaje": "Pulqueria", "actor": "Semillero 2024 (Sección A)" }
       ],
       "ficha_tecnica": {
-        "direccion": "Profesor Asesor",
-        "utileria": "Estudiantes de 3.° Grado",
-        "registro": "Archivo Fotográfico COAR"
+        "direccion": "Profesor Asesor de Expresión Artística",
+        "utileria": "Mobiliario escolar adaptado y utilería de época",
+        "registro": "Archivo Fotográfico COAR Amazonas"
       }
     }
   ],
@@ -106,19 +106,19 @@
     {
       "nombre": "Elenco Promoción 2026 (4.° Grado)",
       "periodo": "2025 - Presente",
-      "descripcion": "Especialización en drama clásico y técnicas de modulación vocal.",
+      "descripcion": "Elenco enfocado en dramaturgia original, teatro psicológico e investigación de dinámicas de encierro escolar ('Noche de Apagón').",
       "foto": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
     },
     {
       "nombre": "Elenco Promoción 2025 (5.° Grado)",
       "periodo": "2024 - 2025",
-      "descripcion": "Montajes de tragedia lírica, creación colectiva y poesía dramatizada.",
+      "descripcion": "Montaje completo de 'Bodas de Sangre' y ejercicios de tragedia clásica con guitarra en vivo y declamación coral.",
       "foto": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80"
     },
     {
       "nombre": "Semillero Teatral 2024 (3.° Grado)",
       "periodo": "2024",
-      "descripcion": "Iniciación al juego dramático, improvisación y sainete costumbrista.",
+      "descripcion": "Iniciación escénica en comedia criolla peruana ('El Sargento Canuto'), trabajo corporal y control de respiración diafragmática.",
       "foto": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80"
     }
   ]

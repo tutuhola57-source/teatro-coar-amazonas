@@ -13,7 +13,7 @@ const { obras } = teatroData;
           Obras Representadas por el Elenco
         </h2>
         <p class="text-sm text-slate-400 mt-2 max-w-2xl">
-          Fichas artísticas, galerías fotográficas de actuaciones y libretos organizados por grado y temporada.
+          Montajes teatrales trabajados por los estudiantes del internado: libretos de estudio en PDF, diseño de personajes y registro de puestas en escena en el SUM.
         </p>
       </div>
 
@@ -29,21 +29,21 @@ const { obras } = teatroData;
         <button
           type="button"
           class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
-          data-filter="4.° de Secundaria"
+          data-filter="4.°"
         >
           4.° Grado
         </button>
         <button
           type="button"
           class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
-          data-filter="5.° de Secundaria"
+          data-filter="5.°"
         >
           5.° Grado
         </button>
         <button
           type="button"
           class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition-all bg-stage-850 hover:bg-stage-800 text-slate-300 border border-stage-700"
-          data-filter="3.° de Secundaria"
+          data-filter="3.°"
         >
           3.° Grado
         </button>
@@ -144,11 +144,11 @@ const { obras } = teatroData;
       btn.classList.add('bg-theatre-gold', 'text-stage-950', 'active', 'shadow');
       btn.classList.remove('bg-stage-850', 'text-slate-300', 'border-stage-700');
 
-      const filter = btn.getAttribute('data-filter');
+      const filter = btn.getAttribute('data-filter') || 'all';
 
       cards.forEach((card) => {
-        const grado = card.getAttribute('data-grado');
-        if (filter === 'all' || grado === filter) {
+        const grado = card.getAttribute('data-grado') || '';
+        if (filter === 'all' || grado.includes(filter)) {
           (card as HTMLElement).style.display = 'flex';
         } else {
           (card as HTMLElement).style.display = 'none';
