@@ -12,6 +12,46 @@
   },
   "obras": [
     {
+      "id": "fuenteovejuna-la-voz-de-un-pueblo",
+      "titulo": "Fuenteovejuna La Voz De Un Pueblo",
+      "autor": "Elenco de Teatro • COAR Amazonas",
+      "anio": "2026",
+      "grado": "4.° y 5.° de Secundaria",
+      "genero": "Drama / Creación Colectiva",
+      "duracion": "45-50 min",
+      "sinopsis": "Puesta en escena y texto dramático de 'Fuenteovejuna La Voz De Un Pueblo', adaptado y montado por los estudiantes del Elenco de Teatro del COAR Amazonas. Libreto íntegro con partitura vocal y acotaciones para ensayos.",
+      "pdf_tamano": "Libreto PDF (7 KB)",
+      "reparto": [
+        {
+          "personaje": "Esteban",
+          "actor": "Personaje Principal (Esteban)"
+        },
+        {
+          "personaje": "Juez",
+          "actor": "Personaje Principal (Juez)"
+        },
+        {
+          "personaje": "Laurencia",
+          "actor": "Personaje Principal (Laurencia)"
+        },
+        {
+          "personaje": "Frondoso",
+          "actor": "Personaje Principal (Frondoso)"
+        }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Profesor Asesor • Taller de Teatro COAR Amazonas",
+        "luces": "Esquema escolar de reflectores y contraluces",
+        "sonido": "Efectos sonoros y musicalización de escena"
+      },
+      "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "libretos/fuenteovejuna-la-voz-de-un-pueblo.pdf"
+    },
+    {
       "id": "noche-de-apagon-obra-completa",
       "titulo": "Noche de Apagón (Obra Completa en Tres Actos)",
       "autor": "Dramaturgia Colectiva • Elenco COAR Amazonas",
@@ -29,14 +69,38 @@
       "pdf_libreto": "libretos/noche-de-apagon-obra-completa.pdf",
       "pdf_tamano": "Libreto Completo PDF (13 págs)",
       "reparto": [
-        { "personaje": "Mateo", "actor": "El Brigadier — Rigidez militar y temor a perder el control" },
-        { "personaje": "Sofía", "actor": "La Excelencia — Hiperventilación y pánico al error milimétrico" },
-        { "personaje": "Lucas", "actor": "El Sarcasmo — Cinismo protector y herida de abandono filial" },
-        { "personaje": "Valeria", "actor": "La Fricción — Desafío frontal contra la autoridad escolar" },
-        { "personaje": "Dante", "actor": "El Fantasma — Murmullos, culpa y delator forzado por el sistema" },
-        { "personaje": "Isabel", "actor": "La Raíz — Templanza pausada, memoria ancestral y pulso del río" },
-        { "personaje": "Joaquín", "actor": "El Cálculo — Ametralladora matemática y lógica analítica" },
-        { "personaje": "Camila", "actor": "El Pegamento — Mediación angustiada que transita a la determinación coral" }
+        {
+          "personaje": "Mateo",
+          "actor": "El Brigadier — Rigidez militar y temor a perder el control"
+        },
+        {
+          "personaje": "Sofía",
+          "actor": "La Excelencia — Hiperventilación y pánico al error milimétrico"
+        },
+        {
+          "personaje": "Lucas",
+          "actor": "El Sarcasmo — Cinismo protector y herida de abandono filial"
+        },
+        {
+          "personaje": "Valeria",
+          "actor": "La Fricción — Desafío frontal contra la autoridad escolar"
+        },
+        {
+          "personaje": "Dante",
+          "actor": "El Fantasma — Murmullos, culpa y delator forzado por el sistema"
+        },
+        {
+          "personaje": "Isabel",
+          "actor": "La Raíz — Templanza pausada, memoria ancestral y pulso del río"
+        },
+        {
+          "personaje": "Joaquín",
+          "actor": "El Cálculo — Ametralladora matemática y lógica analítica"
+        },
+        {
+          "personaje": "Camila",
+          "actor": "El Pegamento — Mediación angustiada que transita a la determinación coral"
+        }
       ],
       "ficha_tecnica": {
         "direccion": "Dirección Artística COAR Amazonas",
@@ -61,11 +125,26 @@
       "pdf_libreto": "#",
       "pdf_tamano": "2.4 MB (Archivo)",
       "reparto": [
-        { "personaje": "La Madre", "actor": "Promoción 2025 (Chachapoyas)" },
-        { "personaje": "El Novio", "actor": "Promoción 2025 (Luya)" },
-        { "personaje": "La Novia", "actor": "Promoción 2025 (Bagua)" },
-        { "personaje": "Leonardo", "actor": "Promoción 2025 (Utcubamba)" },
-        { "personaje": "La Luna / La Muerte", "actor": "Promoción 2025 (Bongará)" }
+        {
+          "personaje": "La Madre",
+          "actor": "Promoción 2025 (Chachapoyas)"
+        },
+        {
+          "personaje": "El Novio",
+          "actor": "Promoción 2025 (Luya)"
+        },
+        {
+          "personaje": "La Novia",
+          "actor": "Promoción 2025 (Bagua)"
+        },
+        {
+          "personaje": "Leonardo",
+          "actor": "Promoción 2025 (Utcubamba)"
+        },
+        {
+          "personaje": "La Luna / La Muerte",
+          "actor": "Promoción 2025 (Bongará)"
+        }
       ],
       "ficha_tecnica": {
         "direccion": "Profesor Asesor • Taller de Teatro COAR Amazonas",
@@ -90,10 +169,22 @@
       "pdf_libreto": "#",
       "pdf_tamano": "1.2 MB (Archivo)",
       "reparto": [
-        { "personaje": "Sargento Canuto", "actor": "Semillero 2024 (Sección A)" },
-        { "personaje": "Don Sempronio", "actor": "Semillero 2024 (Sección B)" },
-        { "personaje": "Jacoba", "actor": "Semillero 2024 (Sección C)" },
-        { "personaje": "Pulqueria", "actor": "Semillero 2024 (Sección A)" }
+        {
+          "personaje": "Sargento Canuto",
+          "actor": "Semillero 2024 (Sección A)"
+        },
+        {
+          "personaje": "Don Sempronio",
+          "actor": "Semillero 2024 (Sección B)"
+        },
+        {
+          "personaje": "Jacoba",
+          "actor": "Semillero 2024 (Sección C)"
+        },
+        {
+          "personaje": "Pulqueria",
+          "actor": "Semillero 2024 (Sección A)"
+        }
       ],
       "ficha_tecnica": {
         "direccion": "Profesor Asesor de Expresión Artística",
