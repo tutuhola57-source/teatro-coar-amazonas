@@ -10,10 +10,10 @@ os.makedirs(os.path.dirname(pdf_path), exist_ok=True)
 doc = SimpleDocTemplate(
     pdf_path,
     pagesize=letter,
-    rightMargin=45,
-    leftMargin=45,
-    topMargin=40,
-    bottomMargin=40
+    rightMargin=38,
+    leftMargin=38,
+    topMargin=32,
+    bottomMargin=32
 )
 
 styles = getSampleStyleSheet()
@@ -67,7 +67,7 @@ char_style = ParagraphStyle(
     fontSize=9,
     leading=12,
     textColor=colors.HexColor('#991b1b'),
-    spaceBefore=5,
+    spaceBefore=4,
     spaceAfter=1
 )
 
@@ -76,9 +76,9 @@ dialogue_style = ParagraphStyle(
     parent=styles['Normal'],
     fontName='Helvetica',
     fontSize=9,
-    leading=12.5,
+    leading=12,
     leftIndent=12,
-    spaceAfter=2,
+    spaceAfter=1.5,
     textColor=colors.HexColor('#1e293b')
 )
 
@@ -89,8 +89,8 @@ stage_dir_style = ParagraphStyle(
     fontSize=8,
     leading=11,
     leftIndent=12,
-    spaceBefore=2,
-    spaceAfter=2,
+    spaceBefore=1.5,
+    spaceAfter=1.5,
     textColor=colors.HexColor('#475569')
 )
 
@@ -101,8 +101,8 @@ cue_style = ParagraphStyle(
     fontSize=8,
     leading=10.5,
     leftIndent=12,
-    spaceBefore=2,
-    spaceAfter=2,
+    spaceBefore=1.5,
+    spaceAfter=1.5,
     textColor=colors.HexColor('#0284c7')
 )
 
