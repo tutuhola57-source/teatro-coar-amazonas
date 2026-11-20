@@ -179,7 +179,14 @@ def extract_metadata_from_pdf(pdf_path: Path) -> dict:
 
 def procesar_bajas(bajas_dir: Path, data: dict) -> list:
     """Procesa obras que el asesor desea dar de baja o despublicar."""
-    archivos_baja = [p for p in bajas_dir.iterdir() if p.is_file() and not p.name.startswith("RECIBO_") and not p.name.startswith("LEEME")]
+    archivos_baja = [
+        p for p in bajas_dir.iterdir()
+        if p.is_file()
+        and not p.name.startswith("RECIBO_")
+        and not p.name.startswith("LEEME")
+        and not p.name.startswith(".")
+        and not p.name.lower().endswith(".ini")
+    ]
     if not archivos_baja:
         return []
 
