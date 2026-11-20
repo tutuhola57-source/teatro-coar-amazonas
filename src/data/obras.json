@@ -12,6 +12,104 @@
   },
   "obras": [
     {
+      "id": "noche-de-apagon-acto-1",
+      "titulo": "Noche De Apagón",
+      "autor": "Elenco de Teatro • COAR Amazonas",
+      "anio": "2026",
+      "grado": "4.° y 5.° de Secundaria",
+      "genero": "Drama / Creación Colectiva",
+      "duracion": "15 min",
+      "sinopsis": "Puesta en escena y texto dramático de 'Noche De Apagón', adaptado y montado por los estudiantes del Elenco de Teatro del COAR Amazonas. Libreto íntegro con partitura vocal y acotaciones escénicas para ensayos.",
+      "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "libretos/noche-de-apagon-acto-1.pdf",
+      "pdf_tamano": "Libreto PDF (14 KB)",
+      "reparto": [
+        {
+          "personaje": "Mateo",
+          "actor": "Personaje Principal (Mateo)"
+        },
+        {
+          "personaje": "Sofía",
+          "actor": "Personaje Principal (Sofía)"
+        },
+        {
+          "personaje": "Valeria",
+          "actor": "Personaje Principal (Valeria)"
+        },
+        {
+          "personaje": "Joaquín",
+          "actor": "Personaje Principal (Joaquín)"
+        },
+        {
+          "personaje": "Lucas",
+          "actor": "Personaje Principal (Lucas)"
+        },
+        {
+          "personaje": "Isabel",
+          "actor": "Personaje Principal (Isabel)"
+        },
+        {
+          "personaje": "Camila",
+          "actor": "Personaje Principal (Camila)"
+        },
+        {
+          "personaje": "Dante",
+          "actor": "Personaje Principal (Dante)"
+        }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Profesor Asesor • Taller de Teatro COAR Amazonas",
+        "luces": "Esquema escolar de reflectores y contraluces",
+        "sonido": "Efectos sonoros y musicalización de escena"
+      }
+    },
+    {
+      "id": "fuenteovejuna-adaptacion-coar",
+      "titulo": "Fuenteovejuna: La Voz De Un Pueblo",
+      "autor": "Elenco de Teatro • COAR Amazonas",
+      "anio": "2026",
+      "grado": "4.° y 5.° de Secundaria",
+      "genero": "Drama / Creación Colectiva",
+      "duracion": "45-50 min",
+      "sinopsis": "Puesta en escena y texto dramático de 'Fuenteovejuna: La Voz De Un Pueblo', adaptado y montado por los estudiantes del Elenco de Teatro del COAR Amazonas. Libreto íntegro con partitura vocal y acotaciones escénicas para ensayos.",
+      "portada": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+      "fotos_escena": [
+        "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "pdf_libreto": "libretos/fuenteovejuna-adaptacion-coar.pdf",
+      "pdf_tamano": "Libreto PDF (7 KB)",
+      "reparto": [
+        {
+          "personaje": "Esteban",
+          "actor": "Personaje Principal (Esteban)"
+        },
+        {
+          "personaje": "Juez",
+          "actor": "Personaje Principal (Juez)"
+        },
+        {
+          "personaje": "Laurencia",
+          "actor": "Personaje Principal (Laurencia)"
+        },
+        {
+          "personaje": "Frondoso",
+          "actor": "Personaje Principal (Frondoso)"
+        }
+      ],
+      "ficha_tecnica": {
+        "direccion": "Profesor Asesor • Taller de Teatro COAR Amazonas",
+        "luces": "Esquema escolar de reflectores y contraluces",
+        "sonido": "Efectos sonoros y musicalización de escena"
+      }
+    },
+    {
       "id": "noche-de-apagon-obra-completa",
       "titulo": "Noche de Apagón (Obra Completa en Tres Actos)",
       "autor": "Dramaturgia Colectiva • Elenco COAR Amazonas",
