@@ -37,23 +37,30 @@ La carpeta compartida en Google Drive del taller cuenta con tres compartimentos 
 
 ### Duda 1: ¿Cómo activar la maquinaria sin que Emerson tenga que intervenir?
 
-Tienes **dos opciones independientes** para que el asesor o cualquier estudiante active la sincronización cuando tú no estés:
+Tienes **tres alternativas complementarias**, lideradas por el nuevo sistema en la nube 100% autónomo:
 
-#### Opción A: Desde cualquier celular o navegador con el botón "Run workflow" (1 Clic en GitHub)
+#### ⚡ Alternativa 1 (La Más Cómoda): Autonomía Total en la Nube con Google Apps Script (0 Clics)
+Gracias al script serverless alojado directamente en Google Drive:
+1. El script `GoogleAppsScript_BuzonTeatro.js` corre en los servidores de Google cada 5 minutos las 24 horas del día.
+2. Cada vez que alguien sube un PDF a `01_Nuevos_Libretos_Para_Publicar` o mueve un archivo a `03_Dar_De_Baja_O_Eliminar`, Google lo detecta y lo envía por API a GitHub Actions en la nube.
+3. GitHub Actions analiza el PDF, extrae los personajes, actualiza el catálogo y despliega en GitHub Pages y Vercel en ~60 segundos.
+4. **Nadie tiene que hacer nada más que arrastrar el archivo en Google Drive.** No se requiere encender computadoras, ni ejecutar archivos `.bat`, ni abrir GitHub.
+
+#### Alternativa 2: Desde cualquier celular o navegador con el botón "Run workflow" (1 Clic en GitHub)
 Cualquier persona a la que Emerson invite como colaborador al repositorio puede activar la actualización sin instalar nada:
 1. Abre en el celular o computadora:  
    👉 **https://github.com/tutuhola57-source/teatro-coar-amazonas/actions**
-2. En la lista de la izquierda, haz clic en **`Deploy to GitHub Pages`**.
+2. En la lista de la izquierda, haz clic en **`Deploy to GitHub Pages & Cloud Sync`**.
 3. Verás un botón a la derecha que dice: **`Run workflow`** con un botón azul.
 4. Haces clic en **`Run workflow`** y listo. Los servidores gratuitos de GitHub en la nube se encienden, leen los cambios y actualizan la web en 60 segundos.
 
-#### Opción B: Instalar el acceso directo de 1 clic en la computadora del profesor asesor
+#### Alternativa 3: Acceso directo local de respaldo en la computadora del profesor
 En la computadora personal del profesor asesor o en la máquina de la biblioteca/sala de profesores del COAR:
 1. El asesor instala Google Drive para escritorio (para que la carpeta `Teatro_COAR_Buzon` aparezca sincronizada en su explorador de archivos).
 2. Se deja en el Escritorio del profesor el archivo:  
    `Publicar_Libretos_Drive.bat`
-3. Cada vez que el profesor suelte un PDF en Drive, solo le da **doble clic al icono del escritorio**.
-4. La ventana negra se abre sola, procesa el PDF, extrae los personajes, actualiza la web, sube los cambios a GitHub y se cierra sola, dejándole el recibo en su Drive.
+3. Cada vez que el profesor suelte un PDF en Drive y quiera forzar la sincronización local inmediata, solo le da **doble clic al icono del escritorio**.
+4. La ventana se abre sola, procesa el PDF, actualiza la web y se cierra dejándole el recibo en su Drive.
 
 ---
 

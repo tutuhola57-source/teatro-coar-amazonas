@@ -1,12 +1,19 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages & Cloud Sync
 
 on:
   push:
     branches: [main]
+  repository_dispatch:
+    types: [drive_sync, drive_publish, drive_baja]
   workflow_dispatch:
+    inputs:
+      baja_target:
+        description: 'Nombre o ID de la obra a dar de baja (opcional)'
+        required: false
+        default: ''
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -20,6 +27,47 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pypdf
+
+      - name: Run Cloud Sync Processor
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ] && [ "${{ github.event.action }}" = "drive_baja" ]; then
+            echo "[INFO] Running baja for target: ${{ github.event.client_payload.baja_target }}"
+            python scripts/cloud_sync_processor.py --baja "${{ github.event.client_payload.baja_target }}"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.baja_target }}" ]; then
+            echo "[INFO] Running manual baja for target: ${{ inputs.baja_target }}"
+            python scripts/cloud_sync_processor.py --baja "${{ inputs.baja_target }}"
+          else
+            echo "[INFO] Running full catalog synchronization"
+            python scripts/cloud_sync_processor.py --sync-all
+          fi
+
+      - name: Commit & Push Catalog Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/obras.json public/libretos/
+          if ! git diff --staged --quiet; then
+            echo "[INFO] Committing catalog updates back to main branch..."
+            git commit -m "feat(cloud-sync): auto-sync theater catalog from cloud buzon [skip ci]"
+            git push origin main
+          else
+            echo "[INFO] No catalog database changes to commit."
+          fi
+
       - name: Install, build, and upload site
         uses: withastro/action@v3
 

@@ -13,3 +13,8 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+*.ini
+
+# Python
+__pycache__/
+*.pyc
